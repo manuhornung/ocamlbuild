@@ -6,7 +6,7 @@
 # from the main Makefile, but this made it not robust to addition of
 # new variables to this ocaml/Makefile.config that we do not control.
 
-include $(shell ocamlc -where)/Makefile.config
+include "$(shell ocamlc -where)/Makefile.config"
 
 OCAML_PREFIX = $(PREFIX)
 OCAML_BINDIR = $(BINDIR)
